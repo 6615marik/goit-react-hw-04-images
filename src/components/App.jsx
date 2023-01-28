@@ -29,7 +29,7 @@ export const App = () => {
           `${BASE_URL}?key=${API_KEY}&q=${name}&page=${page}&image_type=photo&orientation=horizontal&per_page=12&safesearch=true`
         )
         .then(response => {
-          console.log(response.data.hits);
+          // console.log(response.data.hits);
           if (!response.data.hits.length) {
             Notiflix.Notify.failure('No images found!');
           }
@@ -50,7 +50,7 @@ export const App = () => {
 
   const toggleModal = (largeImageURL, tags) => {
     if (!showModal) {
-      console.log('rrfr');
+      // console.log('rrfr');
       setShowModal(true);
       setLargeImageURL(largeImageURL);
       setTags(tags);
