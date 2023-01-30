@@ -54,13 +54,11 @@ export const App = () => {
       setShowModal(true);
       setLargeImageURL(largeImageURL);
       setTags(tags);
-      return;
     }
   };
 
   const closeModal = () => {
     setShowModal(false);
-    return;
   };
 
   const valueFromInput = name => {

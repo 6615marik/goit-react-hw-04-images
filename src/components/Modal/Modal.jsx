@@ -26,12 +26,7 @@ export const Modal = ({ url, alt, onClose }) => {
     >
       <div className={css.modal}>
         <img src={url} alt={alt} />
-        <button
-          className={css.btn}
-          onClick={() => {
-            onClose();
-          }}
-        >
+        <button className={css.btn} onClick={onClose}>
           Close
         </button>
       </div>
